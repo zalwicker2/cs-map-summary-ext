@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Counter-Strike Match Summary",
+  "version": "1.0.2",
+  "description": "Shows a summary of your Counter-Strike match results on the game data page.",
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "matches": [
+        "https://steamcommunity.com/id/*/gcpd/730?tab=matchhistorycompetitivepermap",
+        "https://steamcommunity.com/id/*/gcpd/730?tab=matchhistorypremier"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "views/settings.html"
+  }
+}
